@@ -6,102 +6,184 @@
   <title>Serevo Ventures | Technology-first Venture Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Serif+Display&family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="page-header">
     <div class="nav-bar">
       <div class="logo">Serevo Ventures</div>
-      <a class="cta" href="#contact">Work with us</a>
+      <nav class="nav-links">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#contact">Say hello</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-drawer">
+      <a href="#manifesto" class="nav-drawer-link">Manifesto</a>
+      <a href="#experiments" class="nav-drawer-link">Experiments</a>
+      <a href="#approach" class="nav-drawer-link">Approach</a>
+      <a href="#contact" class="nav-drawer-link">Contact</a>
+      <a class="button primary" href="#contact">Say hello</a>
     </div>
   </header>
 
   <section class="hero">
     <div id="particles-js"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Technology-first venture builder</div>
-      <h1>Building the future with engineering-led rigor</h1>
-      <p class="lead">
-        Serevo Ventures Private Limited partners with ambitious teams to craft products that push the frontier of AI,
-        automation, and connected experiences. We deliver with speed, clarity, and a relentless curiosity for what's next.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#capabilities">Explore capabilities</a>
-        <a class="button ghost" href="#contact">Start a conversation</a>
-      </div>
-      <div class="hero-glance">
-        <div class="glance-card">
-          <span class="glance-label">Focus</span>
-          <strong>AI, automation, scalable platforms</strong>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <!-- <div class="hero-badge">Innovation studio, not a services shop</div> -->
+        <h1><span class="scribble">Design-first</span> technology for problems at scale</h1>
+        <p class="lead">
+          Serevo imagines and ships original products that marry engineering rigor with a liberal arts sensibility. We build
+          things the world has not seen yet, with the clarity, craft, and care of a team obsessed with elegance.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiments">View our explorations</a>
+          <a class="button ghost" href="#contact">Build with Serevo</a>
         </div>
-        <div class="glance-card">
-          <span class="glance-label">Approach</span>
-          <strong>Discovery to launch with senior pods</strong>
+        <div class="hero-glance">
+          <div class="glance-card">
+            <span class="glance-label">Posture</span>
+            <strong>Creation over services</strong>
+          </div>
+          <div class="glance-card">
+            <span class="glance-label">Compass</span>
+            <strong>Design-led, engineered to last</strong>
+          </div>
+          <div class="glance-card">
+            <span class="glance-label">Scale</span>
+            <strong>Built for global reach from day one</strong>
+          </div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-heading">Current pursuit</div>
+        <h3>Adaptive insight layers for human + machine collaboration</h3>
+        <p>We are crafting ambient intelligence that listens, synthesizes, and acts—without trading away privacy or taste.</p>
+        <ul>
+          <li>Adaptive UI that morphs to intent</li>
+          <li>Private-by-default data mesh</li>
+          <li>Human oversight with delightful guardrails</li>
+        </ul>
+        <div class="panel-footer">
+          <span class="pill">In exploration</span>
+          <span class="pill ghost">Design + Engineering in tandem</span>
         </div>
       </div>
     </div>
   </section>
 
   <main>
-    <section id="pillars" class="section">
+    <section id="manifesto" class="section">
       <div class="section-heading">
-        <p class="eyebrow">What drives us</p>
-        <h2>Engineering-led venture building</h2>
+        <p class="eyebrow">Manifesto</p>
+        <h2>Innovation with the soul of design</h2>
         <p class="description">
-          We combine deep technical expertise with operator discipline to move from vision to impact quickly.
+          We believe technology should feel inevitable and humane. Every build begins with deep curiosity, a point of view,
+          and the discipline to say no to work that dilutes the mission.
         </p>
       </div>
-      <div class="grid">
+      <div class="grid manifesto-grid">
         <div class="card">
-          <h3>Cutting-edge technology</h3>
-          <p>We experiment with AI, cloud-native architectures, and automation to build resilient products.</p>
+          <h3>Design first, always</h3>
+          <p>Great products are composed, not assembled. We start with narrative, experience, and taste before a single line of code.</p>
         </div>
         <div class="card">
-          <h3>Product thinking</h3>
-          <p>Hypothesis-driven validation keeps us focused on user value while shipping fast.</p>
+          <h3>Technology with intent</h3>
+          <p>We use AI, automation, and modern platforms when they elevate the human, not just because they are new.</p>
         </div>
         <div class="card">
-          <h3>Reliable delivery</h3>
-          <p>Clear roadmaps, measurable outcomes, and hands-on collaboration with founders and teams.</p>
+          <h3>Scale with integrity</h3>
+          <p>Systems we build can meet global demand while protecting privacy, sustainability, and long-term stewardship.</p>
         </div>
       </div>
     </section>
 
-    <section id="capabilities" class="section muted">
+    <section id="experiments" class="section muted">
       <div class="section-heading">
-        <p class="eyebrow">Capabilities</p>
-        <h2>From idea to scalable platform</h2>
-        <p class="description">Multidisciplinary teams with the craft to design, build, and evolve modern products.</p>
+        <p class="eyebrow">Experiments</p>
+        <h2>Products in motion</h2>
+        <p class="description">Original, opinionated builds that attack complex problems with elegance.</p>
       </div>
-      <div class="grid split">
-        <div class="list">
-          <div class="list-item">
-            <span class="list-title">AI &amp; automation</span>
-            <p>Applied machine learning, intelligent agents, and workflow automation that unlock productivity.</p>
+      <div class="experiments-wrap">
+        <div class="grid experiments-grid">
+          <div class="card">
+            <div class="pill">Civic systems</div>
+            <h3>So you cracked the blur?</h3>
+            <p>We like your curiosity. The real concepts live with us—this card is just a wink.</p>
+            <span class="pill ghost">Cheeky peek</span>
           </div>
-          <div class="list-item">
-            <span class="list-title">Cloud-native engineering</span>
-            <p>Secure, reliable systems built on scalable infrastructure and modern DevOps practices.</p>
+          <div class="card">
+            <div class="pill">Life-centric</div>
+            <h3>This is not the roadmap</h3>
+            <p>It’s a decoy for the bold. Ask nicely and we’ll share what’s really in the lab.</p>
+            <span class="pill ghost">Nice try</span>
           </div>
-          <div class="list-item">
-            <span class="list-title">Product design</span>
-            <p>User-centered research, UX, and interface design that keep experiences elegant and intuitive.</p>
-          </div>
-          <div class="list-item">
-            <span class="list-title">Launch &amp; growth</span>
-            <p>Go-to-market readiness, analytics, and iteration loops that accelerate adoption.</p>
+          <div class="card">
+            <div class="pill">Work futures</div>
+            <h3>Hidden on purpose</h3>
+            <p>The good stuff ships quietly. Drop a line and we’ll open the real vault.</p>
+            <span class="pill ghost">Ask us</span>
           </div>
         </div>
+        <div class="experiments-overlay">
+          <div class="overlay-chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 10V8a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 14v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="12" cy="13.5" r="0.01" fill="currentColor"/>
+            </svg>
+            <div>
+              <div class="overlay-title">Locked in the lab</div>
+              <div class="overlay-sub">Reach out to see what we're building next.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Approach</p>
+        <h2>Where design and engineering travel together</h2>
+        <p class="description">Small, senior crews navigate from insight to launch with clarity and conviction.</p>
+      </div>
+      <div class="grid approach-grid">
         <div class="highlight">
-          <p class="eyebrow">How we work</p>
-          <h3>Small, senior teams that own outcomes</h3>
-          <p>We pair founders and product leaders with engineers who ship. Every engagement is transparent, time-boxed, and measured against clear success metrics.</p>
+          <p class="eyebrow">Method</p>
+          <h3>Composed build cycles</h3>
           <ul>
-            <li>Strategy to prototype in weeks</li>
-            <li>Production-grade builds that scale</li>
-            <li>Continuous improvement after launch</li>
+            <li>Field research and narrative framing</li>
+            <li>Experience boards, interaction language, and design systems</li>
+            <li>Technical architecture that scales gracefully</li>
+            <li>Ship in tight loops with integrated QA and observability</li>
           </ul>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <span class="list-title">Design language</span>
+            <p>Signature aesthetics and micro-interactions that make products feel inevitable, not loud.</p>
+          </div>
+          <div class="list-item">
+            <span class="list-title">Responsible AI</span>
+            <p>Guardrails, transparency, and human override baked in from day zero.</p>
+          </div>
+          <div class="list-item">
+            <span class="list-title">Infrastructure</span>
+            <p>Cloud-native, secure, observable stacks ready for global load.</p>
+          </div>
+          <div class="list-item">
+            <span class="list-title">Launch and learn</span>
+            <p>Measurable outcomes, telemetry, and continuous refinement after release.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -115,24 +197,63 @@
         </div>
         <div class="contact-details">
           <div class="contact-item">
-            <span class="contact-label">Company</span>
-            <p>Serevo Ventures Private Limited</p>
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 9.5 12 14l8-4.5v6A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M4.5 9 12 13l7.5-4V8A2 2 0 0 0 17.5 6h-11A2 2 0 0 0 4.5 8v1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Company</span>
+              <p>Serevo Ventures Private Limited</p>
+            </div>
           </div>
           <div class="contact-item">
-            <span class="contact-label">CIN</span>
-            <p>U56210KA2025PTC202088</p>
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 5h10a2 2 0 0 1 2 2v10.5a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 17.5V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M9 5V3m6 2V3m-9 4h12M9 11h6m-6 4h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">CIN</span>
+              <p>U56210KA2025PTC202088</p>
+            </div>
           </div>
           <div class="contact-item">
-            <span class="contact-label">Registered Address</span>
-            <p>Third Floor, 1190, 22nd Cross Rd, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s6-4.5 6-10a6 6 0 1 0-12 0c0 5.5 6 10 6 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Registered Address</span>
+              <p>Third Floor, 1190, 22nd Cross Rd, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
+            </div>
           </div>
           <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <a href="mailto:info@serevoventures.com">info@serevoventures.com</a>
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="m4 7 8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@serevoventures.com">info@serevoventures.com</a>
+            </div>
           </div>
           <div class="contact-item">
-            <span class="contact-label">Contact No</span>
-            <a href="tel:+917624902468">+91 76249 02468</a>
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8.5 4h-2A1.5 1.5 0 0 0 5 5.5c0 7.456 6.044 13.5 13.5 13.5A1.5 1.5 0 0 0 20 17.5v-2a1 1 0 0 0-.83-.98l-3.02-.54a1 1 0 0 0-1 .4l-.98 1.31a1 1 0 0 1-1.2.31 9.5 9.5 0 0 1-4.08-4.08 1 1 0 0 1 .31-1.2l1.31-.98a1 1 0 0 0 .4-1l-.54-3.02A1 1 0 0 0 9.02 4H8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Contact No</span>
+              <a href="tel:+917624902468">+91 76249 02468</a>
+            </div>
           </div>
         </div>
       </div>
@@ -161,6 +282,29 @@
         modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 4 } }
       },
       retina_detect: true
+    });
+  </script>
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const body = document.body;
+    const drawerLinks = document.querySelectorAll(".nav-drawer-link");
+
+    const closeNav = () => {
+      body.classList.remove("nav-open");
+      navToggle?.setAttribute("aria-expanded", "false");
+    };
+
+    navToggle?.addEventListener("click", () => {
+      const isOpen = body.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    drawerLinks.forEach((link) =>
+      link.addEventListener("click", () => closeNav())
+    );
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) closeNav();
     });
   </script>
 </body>
