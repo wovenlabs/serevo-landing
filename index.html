@@ -10,24 +10,38 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="page-header">
     <div class="nav-bar">
       <div class="logo">Serevo Ventures</div>
       <a class="cta" href="#contact">Work with us</a>
     </div>
+  </header>
+
+  <section class="hero">
+    <div id="particles-js"></div>
     <div class="hero-content">
-      <p class="eyebrow">Parent organization of Woven</p>
-      <h1>Building the future with a technology-first mindset</h1>
+      <div class="hero-badge">Technology-first venture builder</div>
+      <h1>Building the future with engineering-led rigor</h1>
       <p class="lead">
         Serevo Ventures Private Limited partners with ambitious teams to craft products that push the frontier of AI,
-        automation, and connected experiences. We deliver with speed, rigor, and a relentless curiosity for what's next.
+        automation, and connected experiences. We deliver with speed, clarity, and a relentless curiosity for what's next.
       </p>
       <div class="hero-actions">
         <a class="button primary" href="#capabilities">Explore capabilities</a>
-        <a class="button ghost" href="#woven">See Woven</a>
+        <a class="button ghost" href="#contact">Start a conversation</a>
+      </div>
+      <div class="hero-glance">
+        <div class="glance-card">
+          <span class="glance-label">Focus</span>
+          <strong>AI, automation, scalable platforms</strong>
+        </div>
+        <div class="glance-card">
+          <span class="glance-label">Approach</span>
+          <strong>Discovery to launch with senior pods</strong>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
     <section id="pillars" class="section">
@@ -92,44 +106,62 @@
       </div>
     </section>
 
-    <section id="woven" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Our portfolio</p>
-        <h2>Introducing Woven</h2>
-        <p class="description">
-          Woven is our flagship platform weaving together data, AI, and automation to orchestrate complex business workflows with clarity and control.
-        </p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Unified view</h3>
-          <p>Connect disparate tools and data sources to see the whole picture in one place.</p>
-        </div>
-        <div class="card">
-          <h3>Intelligent decisions</h3>
-          <p>Built-in AI copilots to recommend next steps, reduce errors, and keep teams in flow.</p>
-        </div>
-        <div class="card">
-          <h3>Ready to integrate</h3>
-          <p>APIs, webhooks, and modular components designed to plug into your existing ecosystem.</p>
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="section contact">
       <div class="contact-card">
         <div>
           <p class="eyebrow">Partner with Serevo</p>
-          <h2>Let's build something bold</h2>
+          <h2>Contact us</h2>
           <p class="description">Tell us about the product, platform, or capability you want to bring to life. We'll assemble a nimble team to get you there.</p>
         </div>
-        <a class="button primary" href="mailto:hello@serevo.ventures">hello@serevo.ventures</a>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-label">Company</span>
+            <p>Serevo Ventures Private Limited</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">CIN</span>
+            <p>U56210KA2025PTC202088</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Registered Address</span>
+            <p>Third Floor, 1190, 22nd Cross Rd, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@serevoventures.com">info@serevoventures.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Contact No</span>
+            <a href="tel:+917624902468">+91 76249 02468</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Serevo Ventures Private Limited &bull; Technology-first venture builder &bull; Parent organization of Woven</p>
+    <p>Serevo Ventures Private Limited &bull; Technology-first venture builder</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: ["#5ad0ff", "#8cf79a", "#ffffff"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.3, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#5ad0ff", opacity: 0.2, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>
